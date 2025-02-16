@@ -1,0 +1,12 @@
+dbt_pcarnacini:
+  target: dev
+  outputs:
+    dev:
+      type: redshift
+      host: default-workgroup.537124937131.us-east-1.redshift-serverless.amazonaws.com
+      user: admin
+      password: 12345678aA
+      port: 5439
+      dbname: northwind
+      schema: public
+      threads: 6
